@@ -4,11 +4,6 @@
   "description": "",
   "main": "index.js",
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": ""
-    }
-  },
   "lint-staged": {
     "src/**/*.ts": [
       "yarn lint --fix",
