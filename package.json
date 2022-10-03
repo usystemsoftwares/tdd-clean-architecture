@@ -6,17 +6,17 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": ""
     }
   },
   "lint-staged": {
     "src/**/*.ts": [
-      "eslint --fix src/",
-      "yarn test:staged",
-      "git add"
+      "yarn lint --fix",
+      "yarn test:staged"
     ]
   },
   "scripts": {
+    "lint": "eslint src/ --max-warnings=0",
     "test": "jest --passWithNoTests --watch",
     "test:staged": "jest --passWithNoTests",
     "prepare": "husky install"
