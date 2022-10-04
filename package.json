@@ -39,5 +39,9 @@
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "*"
+  },
+  "dependencies": {
+    "@types/validator": "^13.7.7",
+    "validator": "^13.7.0"
   }
 }
