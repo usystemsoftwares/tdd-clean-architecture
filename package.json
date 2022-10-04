@@ -24,6 +24,7 @@
   "author": "Raphael Martinez",
   "license": "ISC",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/jest": "^29.1.1",
     "@types/node": "^18.8.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "@types/validator": "^13.7.7",
+    "bcrypt": "^5.0.1",
     "validator": "^13.7.0"
   }
 }
