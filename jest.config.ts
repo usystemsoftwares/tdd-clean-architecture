@@ -1,7 +1,13 @@
 export default {
   roots: ['<rootDir>/src'],
   clearMocks: true,
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '!<rootDir>/src/main/**',
+    '!<rootDir>/src/domain/**',
+    '!<rootDir>/src/data/protocols/**',
+    '!<rootDir>/src/presentation/protocols/**'
+  ],
   collectCoverage: true,
   testEnvironment: 'node',
   coverageDirectory: 'coverage',
